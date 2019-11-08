@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.forum.ForumFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorblue">
+
+        <RelativeLayout
+            android:id="@+id/rl_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/shequ_bg_1">
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:text="学校"
+                android:textColor="@color/colorblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_luntan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_school"
+                android:paddingLeft="12dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="论坛"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_release"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/image_right"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/fatie"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/related" />
+    </RelativeLayout>
+
+
+</LinearLayout>
